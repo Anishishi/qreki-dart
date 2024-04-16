@@ -11,29 +11,43 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# qreki-dart
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+You can get these values.
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- [六曜 (Rokuyo)](https://ja.wikipedia.org/wiki/%E5%85%AD%E6%9B%9C)
+- [旧暦 (The old calendar)](https://ja.wikipedia.org/wiki/%E6%97%A7%E6%9A%A6)
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
 ```dart
-const like = 'sample';
+import 'package:qreki_dart/qreki_dart.dart';
+import 'package:qreki_dart/src/helpers/to_ordinal.dart';
+
+void main() {
+  print(toOrdinal(DateTime(2017, 10, 17)));
+  final k = Kyureki.fromYMD(2017, 10, 17);
+  print(k.toString());
+  // '2017年8月28日'
+  print(k.rokuyouValue);
+  // '大安'
+
+  final date = DateTime(2017, 10, 21);
+  final k2 = Kyureki.fromDate(date);
+  print(k2.toString());
+  // '2017年9月2日'
+  print(k2.rokuyouValue);
+  // '仏滅'
+}
 ```
 
-## Additional information
+## Limitations
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+- Currently, JST is supported.
+
+## Reference
+
+This package is fully based on [qreki_py](https://github.com/fgshun/qreki_py/tree/master) 🎉.
+Thank you!
