@@ -20,7 +20,5 @@ topics:
   - qreki
   - calendar
   - lunar
-  - old
-  - date
-  - time
+  - datetime
   - dart
