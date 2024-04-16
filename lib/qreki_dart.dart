@@ -3,6 +3,6 @@
 /// More dartdocs go here.
 library;
 
-export 'src/qreki_dart_base.dart';
+export 'src/qreki_dart.dart';
 
 // TODO: Export any libraries intended for clients of this package.
