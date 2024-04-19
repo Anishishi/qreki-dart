@@ -1,17 +1,11 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
 # qreki-dart
+
+![Pub Version](https://img.shields.io/pub/v/qreki_dart?color=blue)
+![GitHub](https://img.shields.io/github/license/Anishishi/qreki-dart)
+![pub points](https://img.shields.io/pub/points/chat_bubbles?logo=dart)
+![GitHub last commit](https://img.shields.io/github/last-commit/Anishishi/qreki-dart?color=purple)
+
+A Dart package for accessing Rokuyo and the old Japanese calendar, '旧暦', enabling easy integration of traditional timekeeping into contemporary apps.
 
 ## Features
 
@@ -49,5 +43,12 @@ void main() {
 
 ## Reference
 
-This package is fully based on [qreki_py](https://github.com/fgshun/qreki_py/tree/master) 🎉.
-Thank you!
+This program is a dart port of Hideaki Takano's QREKI.AWK.
+
+The original qreki.awk and qreki.doc, which formed the basis for this program, are included in the src/qrsamp11 directory. Additionally, this project greatly benefited from the Python port by Shunsuke Ito, known as qreki_py 🎉. Thank you!
+
+For more information on qreki.awk, please visit
+
+- [QRSAMP](https://www.vector.co.jp/soft/dos/personal/se016093.html)
+
+- [qreki_py](https://github.com/fgshun/qreki_py/tree/master)
