@@ -77,8 +77,9 @@ else{
 roku=rokuyou(q_reki[2],q_reki[3]);
 
 # 計算結果を表示
-printf("西暦%4d年 %2d月 %2d日は、旧暦%4d年",year,month,day,q_reki[0]);
-printf(" %s %s %sです。\n",k_month,k_date,roku);
+printf("%4d,%s,%s,%s",q_reki[0],k_month,k_date,roku)
+# printf("西暦%4d年 %2d月 %2d日は、旧暦%4d年",year,month,day,q_reki[0]);
+# printf(" %s %s %sです。\n",k_month,k_date,roku);
 }
 
 #=========================================================================

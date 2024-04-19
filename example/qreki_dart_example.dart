@@ -11,4 +11,9 @@ void main() {
   final k2 = Kyureki.fromDate(date);
   print(k2.toString());
   print(k2.rokuyouValue);
+
+  // 閏月
+  final k3 = Kyureki.fromYMD(2020, 6, 14);
+  print(k3.toString());
+  print(k3.rokuyouValue);
 }

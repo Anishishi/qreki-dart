@@ -23,18 +23,18 @@ List<int> kyurekiFromDate(DateTime date, double tz) {
   // Calculate subsequent new moon times
   for (int i = 1; i < 5; i++) {
     saku.add(sakuFromJD(saku[i - 1] + 30.0, tz));
-    if ((saku[i - 1] - saku[i]).abs() <= 26) {
+    if ((saku[i - 1].toInt() - saku[i].toInt()).abs() <= 26) {
       saku[i] = sakuFromJD(saku[i - 1] + 35.0, tz);
     }
   }
 
   // Adjust saku times if needed
-  if (saku[1] <= chu[0].$1) {
+  if (saku[1].toInt() <= chu[0].$1.toInt()) {
     for (int i = 0; i < 4; i++) {
       saku[i] = saku[i + 1];
     }
     saku[4] = sakuFromJD(saku[3] + 35.0, tz);
-  } else if (saku[0] > chu[0].$1) {
+  } else if (saku[0].toInt() > chu[0].$1.toInt()) {
     for (int i = 4; i > 0; i--) {
       saku[i] = saku[i - 1];
     }
@@ -42,19 +42,20 @@ List<int> kyurekiFromDate(DateTime date, double tz) {
   }
 
   // Search for leap months
-  bool leap = saku[4] <= chu[3].$1;
+  bool leap = (saku[4]).toInt() <= (chu[3].$1).toInt();
 
   // Create lunar month array
-  List<List<int>> m = List.generate(5, (_) => List.filled(3, 0));
-  m[0][0] = (chu[0].$2 / 30.0).floor() + 2;
-  m[0][2] = saku[0].floor();
+  final List<List<int>> m = List.generate(5, (_) => List.filled(3, 0));
+  m[0][0] = chu[0].$2 ~/ 30.0 + 2;
+  m[0][2] = saku[0].toInt();
 
   for (int i = 1; i < 5; i++) {
     if (leap && i != 1) {
-      if (chu[i - 1].$1 <= saku[i - 1] || chu[i - 1].$1 >= saku[i]) {
+      if (chu[i - 1].$1.toInt() <= saku[i - 1].toInt() ||
+          chu[i - 1].$1.toInt() >= saku[i].toInt()) {
         m[i - 1][0] = m[i - 2][0];
         m[i - 1][1] = 1;
-        m[i - 1][2] = saku[i - 1].floor();
+        m[i - 1][2] = saku[i - 1].toInt();
         leap = false;
       }
     }
@@ -62,7 +63,7 @@ List<int> kyurekiFromDate(DateTime date, double tz) {
     if (m[i][0] > 12) {
       m[i][0] -= 12;
     }
-    m[i][2] = saku[i].floor();
+    m[i][2] = saku[i].toInt();
   }
 
   // Determine the current lunar date
