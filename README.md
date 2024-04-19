@@ -49,6 +49,9 @@ The original qreki.awk and qreki.doc, which formed the basis for this program, a
 
 For more information on qreki.awk, please visit
 
-- [QRSAMP](https://www.vector.co.jp/soft/dos/personal/se016093.html)
+- QRSAMP
+
+  - https://www.vector.co.jp/soft/dos/personal/se016093.html
+  - original files: ./QRSAMP
 
 - [qreki_py](https://github.com/fgshun/qreki_py/tree/master)
