@@ -34,6 +34,13 @@ void main() {
   // '2017年9月2日'
   print(k2.rokuyouValue);
   // '仏滅'
+
+  // 閏月
+  final k3 = Kyureki.fromYMD(2020, 6, 14);
+  // '2020年4月23日'
+  print(k3.toString());
+  // '友引'
+  print(k3.rokuyouValue);
 }
 ```
 
@@ -51,7 +58,7 @@ For more information on qreki.awk, please visit
 
 - QRSAMP
 
-  - https://www.vector.co.jp/soft/dos/personal/se016093.html
+  - [sources](https://www.vector.co.jp/soft/dos/personal/se016093.html)
   - original files: ./QRSAMP
 
 - [qreki_py](https://github.com/fgshun/qreki_py/tree/master)
