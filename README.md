@@ -2,7 +2,7 @@
 
 ![Pub Version](https://img.shields.io/pub/v/qreki_dart?color=blue)
 ![GitHub](https://img.shields.io/github/license/Anishishi/qreki-dart)
-![pub points](https://img.shields.io/pub/points/chat_bubbles?logo=dart)
+![pub points](https://img.shields.io/pub/points/qreki_dart?logo=dart)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Anishishi/qreki-dart?color=purple)
 
 A Dart package for accessing Rokuyo and the old Japanese calendar, '旧暦', enabling easy integration of traditional timekeeping into contemporary apps.
