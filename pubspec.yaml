@@ -1,6 +1,6 @@
 name: qreki_dart
 description: A Dart package for accessing Rokuyo and the old Japanese calendar, '旧暦', enabling easy integration of traditional timekeeping into contemporary apps.
-version: 0.1.0
+version: 1.0.0
 repository: https://github.com/Anishishi/qreki-dart
 funding:
   - https://github.com/Anishishi
