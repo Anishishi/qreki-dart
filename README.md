@@ -7,6 +7,8 @@
 
 A Dart package for accessing Rokuyo and the old Japanese calendar, '旧暦', enabling easy integration of traditional timekeeping into contemporary apps.
 
+dart pakcage is here: [qreki_dart](https://pub.dev/packages/qreki_dart)
+
 ## Features
 
 You can get these values.
