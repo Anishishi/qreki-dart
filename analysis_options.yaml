@@ -29,7 +29,6 @@ linter:
     - hash_and_equals
     - implementation_imports
     - non_constant_identifier_names
-    - package_api_docs
     - package_names
     - package_prefixed_library_names
     - test_types_in_equals
