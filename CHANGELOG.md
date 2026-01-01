@@ -1,5 +1,12 @@
 # qreki_dart
 
+## 1.1.0
+
+- Add CI workflows and scripts, plus Dependabot configuration
+- Add golden AWK fixtures and a generator for tests
+- Tighten analyzer settings and update dev dependencies
+- Update repo docs, Codeowners, and gitignore
+
 ## 1.0.1
 
 - Fix documents
