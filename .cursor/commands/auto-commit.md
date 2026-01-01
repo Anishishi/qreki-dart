@@ -44,5 +44,3 @@ git commit -m "<message>"
 * Exactly one commit.
 * Do not push.
 * Do not ask for confirmation (except when terminal permission is required).
-
-```
