@@ -25,8 +25,8 @@ If the current branch is `main`, create and switch to:
 git switch -c <type>/<topic>
 ```
 
-* `<type>`: `feat`, `fix`, `chore`
-* `<topic>`: derived from the actual changes, kebab-case
+- `<type>`: `feat`, `fix`, `chore`
+- `<topic>`: derived from the actual changes, kebab-case
 
 ### 3) Generate commit message
 
@@ -41,6 +41,6 @@ git commit -m "<message>"
 
 ## Constraints
 
-* Exactly one commit.
-* Do not push.
-* Do not ask for confirmation (except when terminal permission is required).
+- Exactly one commit.
+- Do not push.
+- Do not ask for confirmation (except when terminal permission is required).
