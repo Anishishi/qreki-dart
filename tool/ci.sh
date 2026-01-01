@@ -18,11 +18,7 @@ echo "==> Analyzing"
 dart analyze
 
 echo "==> Testing"
-if [[ "$in_ci" == "true" ]]; then
-  dart test --tags=full
-else
-  dart test
-fi
+dart test
 
 echo "==> Publish dry run"
 dart pub publish --dry-run
