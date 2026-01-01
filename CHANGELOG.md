@@ -1,5 +1,11 @@
 # qreki_dart
 
+## 1.1.1
+
+- Add release and publish workflows
+- Clarify bump version workflow
+- Add Kyureki doc comments
+
 ## 1.1.0
 
 - Add CI workflows and scripts, plus Dependabot configuration
