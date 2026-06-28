@@ -1,5 +1,10 @@
 # qreki_dart
 
+## 1.1.2
+
+- Update Dart dev dependencies
+- Bump GitHub Actions checkout to v7
+
 ## 1.1.1
 
 - Add release and publish workflows
